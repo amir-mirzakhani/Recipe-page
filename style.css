@@ -1,0 +1,121 @@
+@font-face {
+  font-family: outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: young;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+p,
+li,
+table {
+  color: hsl(30, 10%, 34%);
+}
+div {
+  margin: 25px 0;
+}
+h3 {
+  color: hsl(14, 45%, 36%);
+  font-family: young;
+  font-weight: normal;
+}
+ul,
+ol {
+  font-family: outfit;
+  margin: 2px 20px;
+  font-size: 12px;
+}
+ul li,
+ol li {
+  margin: 10px 0;
+  padding-left: 5px;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.omlet-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.simple h1 {
+  font-family: young;
+  margin: 10px 0;
+  font-weight: normal;
+}
+.simple p {
+  font-size: 11px;
+  font-family: outfit;
+}
+.warning-box {
+  padding: 10px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 5px;
+  font-family: outfit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.warning-box h5 {
+  color: hsl(332, 51%, 32%);
+}
+
+.warning-box ul li {
+  margin: 10px 0;
+  padding-left: 5px;
+}
+.nutrition {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition h3 {
+  margin: 15px 0;
+}
+.nutrition p {
+  font-size: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: outfit;
+}
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+tr:last-child th,
+tr:last-child td {
+  border-bottom: none; /* Remove the border for the last row */
+}
+.nutrition .numbers {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+/* mobile devices */
+@media (max-width: 553px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+}
